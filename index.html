@@ -7081,6 +7081,220 @@
             }
         }
 
+        /* Inner Objections */
+        .inner-objections-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            width: 100%;
+            max-width: 1000px;
+            margin: 1.5rem 0;
+        }
+
+        .inner-objection {
+            background: rgba(10, 15, 10, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .inner-obj-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .inner-obj-num {
+            width: 28px;
+            height: 28px;
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .inner-obj-header h4 {
+            color: #fff;
+            font-size: 1rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .inner-obj-thought {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            background: rgba(251, 191, 36, 0.1);
+            border-radius: 8px;
+            border-left: 3px solid rgba(251, 191, 36, 0.5);
+        }
+
+        .inner-obj-thought svg {
+            width: 16px;
+            height: 16px;
+            color: #fbbf24;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .inner-obj-thought p {
+            margin: 0;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .inner-obj-answer {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            padding-top: 0.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .inner-obj-answer strong {
+            color: var(--primary);
+        }
+
+        /* Recognition Block */
+        .recognition-block {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 0;
+            max-width: 800px;
+        }
+
+        .recognition-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(34, 197, 94, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .recognition-icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--primary);
+        }
+
+        .recognition-block p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        @media (max-width: 768px) {
+            .inner-objections-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .recognition-block {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Fears Grid */
+        .fears-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            width: 100%;
+            max-width: 1000px;
+            margin: 1.5rem 0;
+        }
+
+        .fear-card {
+            background: rgba(239, 68, 68, 0.05);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .fear-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .fear-icon {
+            width: 36px;
+            height: 36px;
+            background: rgba(239, 68, 68, 0.15);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .fear-icon svg {
+            width: 20px;
+            height: 20px;
+            color: #ef4444;
+        }
+
+        .fear-header h4 {
+            color: #fff;
+            font-size: 0.95rem;
+            margin: 0;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .fear-thought {
+            padding: 0.75rem;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 8px;
+            border-left: 3px solid rgba(239, 68, 68, 0.4);
+        }
+
+        .fear-thought p {
+            margin: 0;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .fear-answer {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            padding-top: 0.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .fear-answer strong {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .fears-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .funnel-step {
             padding: 0.5rem 1rem;
             background: rgba(34, 197, 94, 0.1);
@@ -7289,7 +7503,7 @@
     <div class="slides-container">
         <!-- Slide 1: Intro -->
         <section class="slide" id="intro">
-            <span class="slide-number">01 / 45</span>
+            <span class="slide-number">01 / 47</span>
             
             <div class="logo">
                 <div class="logo-icon">
@@ -7341,7 +7555,7 @@
 
         <!-- Slide 2: Secret of Success -->
         <section class="slide" id="pains-check">
-            <span class="slide-number">02 / 45</span>
+            <span class="slide-number">02 / 47</span>
 
             <h2 class="section-title">У чому секрет <span class="highlight">найуспішніших компаній?</span></h2>
 
@@ -7384,7 +7598,7 @@
 
         <!-- Slide 3: McDonald's Example -->
         <section class="slide" id="mcdonalds-example">
-            <span class="slide-number">03 / 45</span>
+            <span class="slide-number">03 / 47</span>
 
             <h2 class="section-title">Приклад <span class="highlight">McDonald's</span></h2>
 
@@ -7445,7 +7659,7 @@
 
         <!-- Slide: Inner Dialogue -->
         <section class="slide" id="inner-dialogue">
-            <span class="slide-number">04 / 45</span>
+            <span class="slide-number">04 / 47</span>
 
             <h2 class="section-title">Що <span class="highlight-red">насправді</span> думає ваш працівник?</h2>
             <p class="section-text">Внутрішня розмова, коли немає системи:</p>
@@ -7551,7 +7765,7 @@
 
         <!-- Slide: War Objection -->
         <section class="slide" id="war-objection">
-            <span class="slide-number">05 / 45</span>
+            <span class="slide-number">05 / 47</span>
 
             <h2 class="section-title">«Людей нема, <span class="highlight-red">війна</span>, все на собі»</h2>
 
@@ -7609,7 +7823,7 @@
 
         <!-- Slide 4: Your Production -->
         <section class="slide" id="pain">
-            <span class="slide-number">06 / 45</span>
+            <span class="slide-number">06 / 47</span>
 
             <h2 class="section-title">А на вашому <span class="highlight-red">виробництві?</span></h2>
 
@@ -7657,7 +7871,7 @@
 
         <!-- Slide 5: Excuses -->
         <section class="slide" id="excuses">
-            <span class="slide-number">07 / 45</span>
+            <span class="slide-number">07 / 47</span>
 
             <h2 class="section-title">Коли немає системи — <span class="highlight-red">шукають виправдання</span></h2>
 
@@ -7722,7 +7936,7 @@
 
         <!-- Slide 6: Operating System -->
         <section class="slide" id="operating-system">
-            <span class="slide-number">08 / 45</span>
+            <span class="slide-number">08 / 47</span>
 
             <h2 class="section-title">Вони використовують <span class="highlight">операційну систему</span></h2>
 
@@ -7771,7 +7985,7 @@
 
         <!-- Slide: Manager Dashboard -->
         <section class="slide" id="manager-dashboard">
-            <span class="slide-number">09 / 45</span>
+            <span class="slide-number">09 / 47</span>
 
             <h2 class="section-title">Як <span class="highlight">керівник</span> бачить свої метрики</h2>
             <p class="section-text">1 хвилина на перегляд — і він знає, де болить</p>
@@ -7835,7 +8049,7 @@
 
         <!-- Slide: Small Business Objection -->
         <section class="slide" id="small-business-objection">
-            <span class="slide-number">10 / 45</span>
+            <span class="slide-number">10 / 47</span>
 
             <h2 class="section-title">«В мене <span class="highlight-red">2 співробітники</span>, це для великих»</h2>
 
@@ -7914,13 +8128,209 @@
             </div>
 
             <div class="transition-text">
+                Зараз у вас з'являються схожі думки...
+            </div>
+        </section>
+
+        <!-- Slide: Inner Objections -->
+        <section class="slide" id="inner-objections">
+            <span class="slide-number">11 / 47</span>
+
+            <h2 class="section-title">«Зараз у вас з'являються <span class="highlight">схожі думки</span>...»</h2>
+            <p class="section-text">Я їх чую на кожній зустрічі, тому одразу озвучу:</p>
+
+            <div class="inner-objections-list">
+                <!-- Objection 1 -->
+                <div class="inner-objection">
+                    <div class="inner-obj-header">
+                        <span class="inner-obj-num">1</span>
+                        <h4>«Це виглядає складно»</h4>
+                    </div>
+                    <div class="inner-obj-thought">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <p>«У мене і так все на межі...»</p>
+                    </div>
+                    <div class="inner-obj-answer">
+                        <strong>Складно не тому, що дій багато.</strong> А тому, що зараз немає послідовності. Система — це не «ще щось робити». Це перестати робити зайве.
+                    </div>
+                </div>
+
+                <!-- Objection 2 -->
+                <div class="inner-objection">
+                    <div class="inner-obj-header">
+                        <span class="inner-obj-num">2</span>
+                        <h4>«У мене немає на це часу»</h4>
+                    </div>
+                    <div class="inner-obj-thought">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <p>«Ще один проєкт — це забагато»</p>
+                    </div>
+                    <div class="inner-obj-answer">
+                        <strong>Парадокс:</strong> система впроваджується не коли з'явився час, а щоб цей час з'явився. Ми не зупиняємо бізнес — забираємо хаос по одному вузлу.
+                    </div>
+                </div>
+
+                <!-- Objection 3 -->
+                <div class="inner-objection">
+                    <div class="inner-obj-header">
+                        <span class="inner-obj-num">3</span>
+                        <h4>«У мене проблема в людях»</h4>
+                    </div>
+                    <div class="inner-obj-thought">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <p>«Просто немає нормальних людей»</p>
+                    </div>
+                    <div class="inner-obj-answer">
+                        <strong>Практика показує:</strong> якщо різні люди роблять по-різному — значить немає зафіксованого результату, а не «погані люди».
+                    </div>
+                </div>
+
+                <!-- Objection 4 -->
+                <div class="inner-objection">
+                    <div class="inner-obj-header">
+                        <span class="inner-obj-num">4</span>
+                        <h4>«Я боюся, що не витягну»</h4>
+                    </div>
+                    <div class="inner-obj-thought">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <p>«Все тримається на мені, як я ще й це потягну?»</p>
+                    </div>
+                    <div class="inner-obj-answer">
+                        <strong>Хороша новина:</strong> система не вимагає ідеальних керівників. Вона якраз створена для ситуацій, де все тримається на власнику.
+                    </div>
+                </div>
+            </div>
+
+            <div class="recognition-block">
+                <div class="recognition-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                </div>
+                <p>Якщо ви зараз упізнали свої думки — значить, ми говоримо про <strong>реальні речі</strong>, а не про теорію.</p>
+            </div>
+
+            <div class="transition-text">
+                А якщо ви вже щось пробували раніше...
+            </div>
+        </section>
+
+        <!-- Slide: Experienced Fears -->
+        <section class="slide" id="experienced-fears">
+            <span class="slide-number">12 / 47</span>
+
+            <h2 class="section-title">А якщо ви <span class="highlight">вже пробували?</span></h2>
+            <p class="section-text">Страхи тих, хто мав досвід із «системами»:</p>
+
+            <div class="fears-grid">
+                <!-- Fear 1 -->
+                <div class="fear-card">
+                    <div class="fear-header">
+                        <div class="fear-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                                <line x1="12" y1="9" x2="12" y2="13"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                        <h4>«Ми вже пробували — не спрацювало»</h4>
+                    </div>
+                    <div class="fear-thought">
+                        <p>«Я бачила "системи", які гарно виглядають, але в житті не працюють»</p>
+                    </div>
+                    <div class="fear-answer">
+                        <strong>Проблема не в тому, що система погана.</strong> А в тому, що вона починалась з інструменту, а не з реального болю бізнесу.
+                    </div>
+                </div>
+
+                <!-- Fear 2 -->
+                <div class="fear-card">
+                    <div class="fear-header">
+                        <div class="fear-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h4>«Буде супротив команди»</h4>
+                    </div>
+                    <div class="fear-thought">
+                        <p>«Вони і так перевантажені, а тут ще "нова система"»</p>
+                    </div>
+                    <div class="fear-answer">
+                        <strong>Супротив виникає не від змін, а від незрозумілих змін.</strong> Коли є чіткий результат і зрозуміло, як виглядає «зроблено правильно» — напруга зникає.
+                    </div>
+                </div>
+
+                <!-- Fear 3 -->
+                <div class="fear-card">
+                    <div class="fear-header">
+                        <div class="fear-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h4>«Боюся втратити контроль»</h4>
+                    </div>
+                    <div class="fear-thought">
+                        <p>«Якщо я відпущу — все розвалиться»</p>
+                    </div>
+                    <div class="fear-answer">
+                        <strong>Коли все на власнику — це не контроль, а перевантаження.</strong> Система не забирає контроль — вона переводить його з голови в цифри.
+                    </div>
+                </div>
+
+                <!-- Fear 4 -->
+                <div class="fear-card">
+                    <div class="fear-header">
+                        <div class="fear-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <h4>«Зараз не той момент»</h4>
+                    </div>
+                    <div class="fear-thought">
+                        <p>«Може, не зараз... може, після свят / приїзду партнера / закриття проєкту»</p>
+                    </div>
+                    <div class="fear-answer">
+                        <strong>Більшість чекають, коли стане спокійніше.</strong> Але спокійніше стає ПІСЛЯ того, як з'являється система, а не до.
+                    </div>
+                </div>
+            </div>
+
+            <div class="recognition-block">
+                <div class="recognition-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                </div>
+                <p>Якщо впізнали себе — <strong>це нормально</strong>. Ці страхи є у 90% власників. Різниця в тому, хто діє попри них.</p>
+            </div>
+
+            <div class="transition-text">
                 Тепер перевіримо ваше виробництво на практиці...
             </div>
         </section>
 
         <!-- Slide: Product Questions -->
         <section class="slide" id="product-questions">
-            <span class="slide-number">11 / 45</span>
+            <span class="slide-number">13 / 47</span>
 
             <h2 class="section-title">Перш ніж щось пояснювати</h2>
             <p class="section-text">Я задам кілька простих питань. Відповідайте собі — так або ні.</p>
@@ -7964,7 +8374,7 @@
 
         <!-- Slide 11: Product vs Process -->
         <section class="slide" id="product-process">
-            <span class="slide-number">12 / 45</span>
+            <span class="slide-number">14 / 47</span>
 
             <h2 class="section-title">Ключова помилка: <span class="highlight">процес ≠ продукт</span></h2>
 
@@ -8008,7 +8418,7 @@
 
         <!-- Slide 12: Product Example -->
         <section class="slide" id="product-example">
-            <span class="slide-number">13 / 45</span>
+            <span class="slide-number">15 / 47</span>
 
             <h2 class="section-title">Виробничий приклад</h2>
 
@@ -8077,7 +8487,7 @@
 
         <!-- Slide 13: Aha Moment -->
         <section class="slide" id="aha-moment">
-            <span class="slide-number">14 / 45</span>
+            <span class="slide-number">16 / 47</span>
 
             <h2 class="section-title">Тепер повернемось до питань</h2>
 
@@ -8125,7 +8535,7 @@
 
         <!-- Slide 14: Calculator -->
         <section class="slide" id="calculator">
-            <span class="slide-number">15 / 45</span>
+            <span class="slide-number">17 / 47</span>
 
             <h2 class="section-title">Калькулятор <span class="highlight">втрат</span></h2>
             <p class="section-text">Порахуймо, скільки це коштує вашому бізнесу</p>
@@ -8192,7 +8602,7 @@
 
         <!-- Slide 15: Pains Check - Manufacturing -->
         <section class="slide" id="pains-check">
-            <span class="slide-number">16 / 45</span>
+            <span class="slide-number">18 / 47</span>
 
             <h2 class="section-title">Чи буває у вас <span class="highlight-red">таке?</span></h2>
             <p class="section-text">Відмітьте ситуації, які трапляються у вашому виробництві</p>
@@ -8351,7 +8761,7 @@
 
         <!-- Slide 16: Org Structure Wrong -->
         <section class="slide" id="tools">
-            <span class="slide-number">17 / 45</span>
+            <span class="slide-number">19 / 47</span>
 
             <div class="structure-header">
                 <div class="structure-icon">
@@ -8460,7 +8870,7 @@
 
         <!-- Slide 17: Manufacturing Functions Part 1 -->
         <section class="slide" id="functions">
-            <span class="slide-number">18 / 45</span>
+            <span class="slide-number">20 / 47</span>
 
             <div class="solution-badge">Рішення</div>
 
@@ -8701,7 +9111,7 @@
 
         <!-- Slide 18: Management Functions -->
         <section class="slide" id="functions-mgmt">
-            <span class="slide-number">19 / 45</span>
+            <span class="slide-number">21 / 47</span>
 
             <div class="functions-section">
                 <div class="functions-header management">
@@ -8856,7 +9266,7 @@
 
         <!-- Slide 19: Organism Metaphor -->
         <section class="slide" id="organism">
-            <span class="slide-number">20 / 45</span>
+            <span class="slide-number">22 / 47</span>
 
             <h2 class="section-title">Бізнес — це <span class="highlight">організм</span></h2>
             <p class="section-text">Кожна функція — як орган у тілі людини</p>
@@ -8940,7 +9350,7 @@
 
         <!-- Slide 20: Objection - Not About Hiring -->
         <section class="slide" id="objection">
-            <span class="slide-number">21 / 45</span>
+            <span class="slide-number">23 / 47</span>
 
             <div class="objection-header">
                 <div class="objection-icon">
@@ -9023,7 +9433,7 @@
 
         <!-- Slide 21: Result Formation Skill - Intro -->
         <section class="slide" id="next-tool">
-            <span class="slide-number">22 / 45</span>
+            <span class="slide-number">24 / 47</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #2</span>
@@ -9059,7 +9469,7 @@
 
         <!-- Slide 22: Metrics Part 1 - Operations -->
         <section class="slide" id="metrics-1">
-            <span class="slide-number">23 / 45</span>
+            <span class="slide-number">25 / 47</span>
 
             <h2 class="section-title">Правильні метрики: <span class="highlight">Операції</span></h2>
             <p class="section-text">Не "фальшиві цифри", які нічого не показують</p>
@@ -9177,7 +9587,7 @@
 
         <!-- Slide 23: Metrics Part 2 - Management -->
         <section class="slide" id="metrics-2">
-            <span class="slide-number">24 / 45</span>
+            <span class="slide-number">26 / 47</span>
 
             <h2 class="section-title">Правильні метрики: <span class="highlight">Управління</span></h2>
 
@@ -9290,7 +9700,7 @@
 
         <!-- Slide 24: Ideal Picture -->
         <section class="slide" id="ideal">
-            <span class="slide-number">25 / 45</span>
+            <span class="slide-number">27 / 47</span>
 
             <h2 class="section-title">Як виглядає <span class="highlight">результат</span></h2>
             <p class="section-text">Коли функції визначені + метрики правильні</p>
@@ -9403,7 +9813,7 @@
 
         <!-- Slide 25: Results -->
         <section class="slide" id="results">
-            <span class="slide-number">26 / 45</span>
+            <span class="slide-number">28 / 47</span>
 
             <h2 class="section-title">Результати <span class="highlight">впровадження</span></h2>
 
@@ -9484,7 +9894,7 @@
 
         <!-- Slide 26: Bottleneck Analysis -->
         <section class="slide" id="bottleneck">
-            <span class="slide-number">27 / 45</span>
+            <span class="slide-number">29 / 47</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #4</span>
@@ -9570,7 +9980,7 @@
 
         <!-- Slide 27: Planning System -->
         <section class="slide" id="planning">
-            <span class="slide-number">28 / 45</span>
+            <span class="slide-number">30 / 47</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #5</span>
@@ -9647,7 +10057,7 @@
 
         <!-- Slide 28: Task Technology -->
         <section class="slide" id="task-tech">
-            <span class="slide-number">29 / 45</span>
+            <span class="slide-number">31 / 47</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #6</span>
@@ -9713,7 +10123,7 @@
 
         <!-- Slide 29: Task Delegation -->
         <section class="slide" id="delegation">
-            <span class="slide-number">30 / 45</span>
+            <span class="slide-number">32 / 47</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #7</span>
@@ -9781,7 +10191,7 @@
 
         <!-- Slide: Coordination System -->
         <section class="slide" id="coordination">
-            <span class="slide-number">31 / 45</span>
+            <span class="slide-number">33 / 47</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #8</span>
@@ -9829,7 +10239,7 @@
 
         <!-- Slide: Financial Planning -->
         <section class="slide" id="finance">
-            <span class="slide-number">32 / 45</span>
+            <span class="slide-number">34 / 47</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #9</span>
@@ -9873,7 +10283,7 @@
 
         <!-- Slide: Marketing & Sales System -->
         <section class="slide" id="marketing">
-            <span class="slide-number">33 / 45</span>
+            <span class="slide-number">35 / 47</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">7 ЕЛЕМЕНТІВ</span>
@@ -10112,7 +10522,7 @@
 
         <!-- Slide: How It Works - Simplicity -->
         <section class="slide" id="how-it-works">
-            <span class="slide-number">34 / 45</span>
+            <span class="slide-number">36 / 47</span>
 
             <h2 class="section-title">Як це <span class="highlight">працює?</span></h2>
             <p class="section-text">Все набагато простіше, ніж здається</p>
@@ -10205,7 +10615,7 @@
 
         <!-- Slide 30: Training Platform -->
         <section class="slide" id="platform">
-            <span class="slide-number">35 / 45</span>
+            <span class="slide-number">37 / 47</span>
 
             <h2 class="section-title">Модулі <span class="highlight">прокачки</span></h2>
             <p class="section-text">Знайшли вузьке місце — йдемо підкручувати конкретну зону</p>
@@ -10321,7 +10731,7 @@
 
         <!-- Slide 31: AI Assistants -->
         <section class="slide" id="ai-assistants">
-            <span class="slide-number">36 / 45</span>
+            <span class="slide-number">38 / 47</span>
 
             <h2 class="section-title">AI-асистенти: <span class="highlight">×10 ефективності</span></h2>
             <p class="section-text">Будь-який співробітник стає супер-менеджером</p>
@@ -10393,7 +10803,7 @@
 
         <!-- Slide 32: Objections Part 1 -->
         <section class="slide" id="objections">
-            <span class="slide-number">37 / 45</span>
+            <span class="slide-number">39 / 47</span>
 
             <h2 class="section-title">Типові <span class="highlight-red">заперечення</span></h2>
             <p class="section-text">І чому вони не працюють</p>
@@ -10482,7 +10892,7 @@
 
         <!-- Slide 33: Objections Part 2 -->
         <section class="slide" id="objections-2">
-            <span class="slide-number">38 / 45</span>
+            <span class="slide-number">40 / 47</span>
 
             <h2 class="section-title">Ще <span class="highlight-red">заперечення</span></h2>
 
@@ -10573,7 +10983,7 @@
 
         <!-- Slide 34: Objections Part 3 -->
         <section class="slide" id="objections-3">
-            <span class="slide-number">39 / 45</span>
+            <span class="slide-number">41 / 47</span>
 
             <h2 class="section-title">І ще <span class="highlight-red">заперечення</span></h2>
 
@@ -10662,7 +11072,7 @@
 
         <!-- Slide 35: Objections Part 4 -->
         <section class="slide" id="objections-4">
-            <span class="slide-number">40 / 45</span>
+            <span class="slide-number">42 / 47</span>
 
             <h2 class="section-title">Останні <span class="highlight-red">сумніви</span></h2>
 
@@ -10752,7 +11162,7 @@
 
         <!-- Slide 36: The Difference -->
         <section class="slide" id="difference">
-            <span class="slide-number">41 / 45</span>
+            <span class="slide-number">43 / 47</span>
 
             <h2 class="section-title">В чому <span class="highlight">різниця?</span></h2>
             <p class="section-text">Чому інші інструменти не працюють</p>
@@ -10898,7 +11308,7 @@
 
         <!-- Slide 36: The Secret -->
         <section class="slide" id="secret">
-            <span class="slide-number">42 / 45</span>
+            <span class="slide-number">44 / 47</span>
 
             <h2 class="section-title">Мій <span class="highlight">секрет</span></h2>
 
@@ -10980,7 +11390,7 @@
 
         <!-- Slide 37: The Real Problem -->
         <section class="slide" id="real-problem">
-            <span class="slide-number">43 / 45</span>
+            <span class="slide-number">45 / 47</span>
 
             <h2 class="section-title">Справжня <span class="highlight">проблема</span></h2>
 
@@ -11033,7 +11443,7 @@
 
         <!-- Slide 34: Final Result -->
         <section class="slide" id="final">
-            <span class="slide-number">44 / 45</span>
+            <span class="slide-number">46 / 47</span>
 
             <h2 class="section-title">Кінцевий <span class="highlight">результат</span></h2>
 
@@ -11072,7 +11482,7 @@
 
         <!-- Summary -->
         <section class="slide" id="summary">
-            <span class="slide-number">45 / 45</span>
+            <span class="slide-number">47 / 47</span>
 
             <h2 class="section-title">Що ми розглянули: <span class="highlight">7 + 9</span></h2>
 
