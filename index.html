@@ -6841,6 +6841,246 @@
             }
         }
 
+        /* Dashboard Preview */
+        .dashboard-preview {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(10, 15, 10, 0.9);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 16px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: rgba(34, 197, 94, 0.1);
+            border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+        .dashboard-header span:first-child {
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .dashboard-period {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+        }
+
+        .dashboard-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .dash-metric {
+            background: rgba(10, 15, 10, 0.9);
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .dash-label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .dash-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .dash-value.good {
+            color: var(--primary);
+        }
+
+        .dash-value.warning {
+            color: #fbbf24;
+        }
+
+        .dash-value.bad {
+            color: #ef4444;
+        }
+
+        /* Dashboard Drilldown */
+        .dashboard-drilldown {
+            width: 100%;
+            max-width: 900px;
+            margin: 1.5rem 0;
+        }
+
+        .dashboard-drilldown h4 {
+            color: var(--primary);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .drilldown-items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .drilldown-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 3px solid #ef4444;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .drilldown-hours {
+            font-weight: 700;
+            color: #ef4444;
+            min-width: 60px;
+        }
+
+        .drilldown-reason {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+        }
+
+        .drilldown-insight {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Math Block */
+        .math-block {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem 0;
+        }
+
+        .math-block h4 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .math-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .math-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .math-card.highlight {
+            border-color: var(--primary);
+            background: rgba(34, 197, 94, 0.05);
+        }
+
+        .math-header {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            font-weight: 600;
+            text-align: center;
+            color: var(--text-gray);
+        }
+
+        .math-card.highlight .math-header {
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--primary);
+        }
+
+        .math-content {
+            padding: 1.25rem;
+        }
+
+        .math-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .math-row:last-child {
+            border-bottom: none;
+        }
+
+        .math-row span {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        .math-row strong {
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .math-row strong.red {
+            color: #ef4444;
+        }
+
+        /* Impact List */
+        .impact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            width: 100%;
+            max-width: 700px;
+            margin: 1.5rem 0;
+        }
+
+        .impact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            border-radius: 10px;
+        }
+
+        .impact-item.bad {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        .impact-item svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .impact-item.bad svg {
+            color: #ef4444;
+        }
+
+        .impact-item span {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-metrics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .math-comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .funnel-step {
             padding: 0.5rem 1rem;
             background: rgba(34, 197, 94, 0.1);
@@ -7049,7 +7289,7 @@
     <div class="slides-container">
         <!-- Slide 1: Intro -->
         <section class="slide" id="intro">
-            <span class="slide-number">01 / 43</span>
+            <span class="slide-number">01 / 45</span>
             
             <div class="logo">
                 <div class="logo-icon">
@@ -7101,7 +7341,7 @@
 
         <!-- Slide 2: Secret of Success -->
         <section class="slide" id="pains-check">
-            <span class="slide-number">02 / 43</span>
+            <span class="slide-number">02 / 45</span>
 
             <h2 class="section-title">У чому секрет <span class="highlight">найуспішніших компаній?</span></h2>
 
@@ -7144,7 +7384,7 @@
 
         <!-- Slide 3: McDonald's Example -->
         <section class="slide" id="mcdonalds-example">
-            <span class="slide-number">03 / 43</span>
+            <span class="slide-number">03 / 45</span>
 
             <h2 class="section-title">Приклад <span class="highlight">McDonald's</span></h2>
 
@@ -7205,7 +7445,7 @@
 
         <!-- Slide: Inner Dialogue -->
         <section class="slide" id="inner-dialogue">
-            <span class="slide-number">04 / 43</span>
+            <span class="slide-number">04 / 45</span>
 
             <h2 class="section-title">Що <span class="highlight-red">насправді</span> думає ваш працівник?</h2>
             <p class="section-text">Внутрішня розмова, коли немає системи:</p>
@@ -7311,7 +7551,7 @@
 
         <!-- Slide: War Objection -->
         <section class="slide" id="war-objection">
-            <span class="slide-number">05 / 43</span>
+            <span class="slide-number">05 / 45</span>
 
             <h2 class="section-title">«Людей нема, <span class="highlight-red">війна</span>, все на собі»</h2>
 
@@ -7369,7 +7609,7 @@
 
         <!-- Slide 4: Your Production -->
         <section class="slide" id="pain">
-            <span class="slide-number">06 / 43</span>
+            <span class="slide-number">06 / 45</span>
 
             <h2 class="section-title">А на вашому <span class="highlight-red">виробництві?</span></h2>
 
@@ -7417,7 +7657,7 @@
 
         <!-- Slide 5: Excuses -->
         <section class="slide" id="excuses">
-            <span class="slide-number">07 / 43</span>
+            <span class="slide-number">07 / 45</span>
 
             <h2 class="section-title">Коли немає системи — <span class="highlight-red">шукають виправдання</span></h2>
 
@@ -7482,7 +7722,7 @@
 
         <!-- Slide 6: Operating System -->
         <section class="slide" id="operating-system">
-            <span class="slide-number">08 / 43</span>
+            <span class="slide-number">08 / 45</span>
 
             <h2 class="section-title">Вони використовують <span class="highlight">операційну систему</span></h2>
 
@@ -7525,13 +7765,162 @@
             </div>
 
             <div class="transition-text">
+                Як це виглядає на практиці? Ось дашборд керівника...
+            </div>
+        </section>
+
+        <!-- Slide: Manager Dashboard -->
+        <section class="slide" id="manager-dashboard">
+            <span class="slide-number">09 / 45</span>
+
+            <h2 class="section-title">Як <span class="highlight">керівник</span> бачить свої метрики</h2>
+            <p class="section-text">1 хвилина на перегляд — і він знає, де болить</p>
+
+            <div class="dashboard-preview">
+                <div class="dashboard-header">
+                    <span>Дашборд керівника виробництва</span>
+                    <span class="dashboard-period">за тиждень</span>
+                </div>
+                <div class="dashboard-metrics">
+                    <div class="dash-metric">
+                        <span class="dash-label">План виробництва</span>
+                        <span class="dash-value good">100%</span>
+                    </div>
+                    <div class="dash-metric">
+                        <span class="dash-label">Факт виконання</span>
+                        <span class="dash-value warning">87%</span>
+                    </div>
+                    <div class="dash-metric">
+                        <span class="dash-label">Брак з першого разу</span>
+                        <span class="dash-value bad">14%</span>
+                    </div>
+                    <div class="dash-metric">
+                        <span class="dash-label">Простої обладнання</span>
+                        <span class="dash-value bad">22 год</span>
+                    </div>
+                    <div class="dash-metric">
+                        <span class="dash-label">Переробки</span>
+                        <span class="dash-value warning">9 зам.</span>
+                    </div>
+                    <div class="dash-metric">
+                        <span class="dash-label">Термін виготовлення</span>
+                        <span class="dash-value bad">+2 дні</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-drilldown">
+                <h4>Натискає «Простої 22 години» і бачить:</h4>
+                <div class="drilldown-items">
+                    <div class="drilldown-item">
+                        <span class="drilldown-hours">9 год</span>
+                        <span class="drilldown-reason">очікування матеріалів</span>
+                    </div>
+                    <div class="drilldown-item">
+                        <span class="drilldown-hours">7 год</span>
+                        <span class="drilldown-reason">неузгоджені зміни по замовленнях</span>
+                    </div>
+                    <div class="drilldown-item">
+                        <span class="drilldown-hours">6 год</span>
+                        <span class="drilldown-reason">перевантажений один верстат</span>
+                    </div>
+                </div>
+                <p class="drilldown-insight">Це не проблема «поганих майстрів», а проблема <strong>планування + координації + закупівель</strong></p>
+            </div>
+
+            <div class="transition-text">
+                «Але це ж для великого бізнесу, а в мене 2 співробітники...»
+            </div>
+        </section>
+
+        <!-- Slide: Small Business Objection -->
+        <section class="slide" id="small-business-objection">
+            <span class="slide-number">10 / 45</span>
+
+            <h2 class="section-title">«В мене <span class="highlight-red">2 співробітники</span>, це для великих»</h2>
+
+            <div class="objection-block">
+                <div class="objection-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="12"/>
+                        <line x1="12" y1="16" x2="12.01" y2="16"/>
+                    </svg>
+                </div>
+                <p class="objection-text">«Дашборди, метрики — це все для корпорацій. А в мене маленьке виробництво, 2-3 людини. Мені це не потрібно»</p>
+            </div>
+
+            <div class="math-block">
+                <h4>Давайте порахуємо:</h4>
+                <div class="math-comparison">
+                    <div class="math-card">
+                        <div class="math-header">Великий бізнес</div>
+                        <div class="math-content">
+                            <div class="math-row">
+                                <span>Працівників:</span>
+                                <strong>50 людей</strong>
+                            </div>
+                            <div class="math-row">
+                                <span>1 працівник =</span>
+                                <strong>2% бізнесу</strong>
+                            </div>
+                            <div class="math-row">
+                                <span>Помилка одного:</span>
+                                <strong>майже непомітна</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="math-card highlight">
+                        <div class="math-header">Ваш бізнес</div>
+                        <div class="math-content">
+                            <div class="math-row">
+                                <span>Працівників:</span>
+                                <strong>2 людини</strong>
+                            </div>
+                            <div class="math-row">
+                                <span>1 працівник =</span>
+                                <strong class="red">50% бізнесу</strong>
+                            </div>
+                            <div class="math-row">
+                                <span>Помилка одного:</span>
+                                <strong class="red">катастрофа</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="impact-list">
+                <div class="impact-item bad">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                    <span>Один «не в настрої» — ви втратили <strong>половину потужності</strong></span>
+                </div>
+                <div class="impact-item bad">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                    <span>Один захворів — ви втратили <strong>50% виробництва</strong></span>
+                </div>
+                <div class="impact-item bad">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                    <span>Один звільнився — ви <strong>почали з нуля</strong></span>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <div class="highlight-box-text">
+                    <strong>Саме малому бізнесу система потрібна БІЛЬШЕ, ніж великому.</strong><br><br>
+                    Бо у великому є запас на помилки. У вас — ні.<br><br>
+                    McDonald's не почав з 10 000 ресторанів. Він почав з <strong>одного</strong> — але вже з системою.
+                </div>
+            </div>
+
+            <div class="transition-text">
                 Тепер перевіримо ваше виробництво на практиці...
             </div>
         </section>
 
-        <!-- Slide 7: Product Questions -->
+        <!-- Slide: Product Questions -->
         <section class="slide" id="product-questions">
-            <span class="slide-number">09 / 43</span>
+            <span class="slide-number">11 / 45</span>
 
             <h2 class="section-title">Перш ніж щось пояснювати</h2>
             <p class="section-text">Я задам кілька простих питань. Відповідайте собі — так або ні.</p>
@@ -7575,7 +7964,7 @@
 
         <!-- Slide 11: Product vs Process -->
         <section class="slide" id="product-process">
-            <span class="slide-number">10 / 43</span>
+            <span class="slide-number">12 / 45</span>
 
             <h2 class="section-title">Ключова помилка: <span class="highlight">процес ≠ продукт</span></h2>
 
@@ -7619,7 +8008,7 @@
 
         <!-- Slide 12: Product Example -->
         <section class="slide" id="product-example">
-            <span class="slide-number">11 / 43</span>
+            <span class="slide-number">13 / 45</span>
 
             <h2 class="section-title">Виробничий приклад</h2>
 
@@ -7688,7 +8077,7 @@
 
         <!-- Slide 13: Aha Moment -->
         <section class="slide" id="aha-moment">
-            <span class="slide-number">12 / 43</span>
+            <span class="slide-number">14 / 45</span>
 
             <h2 class="section-title">Тепер повернемось до питань</h2>
 
@@ -7736,7 +8125,7 @@
 
         <!-- Slide 14: Calculator -->
         <section class="slide" id="calculator">
-            <span class="slide-number">13 / 43</span>
+            <span class="slide-number">15 / 45</span>
 
             <h2 class="section-title">Калькулятор <span class="highlight">втрат</span></h2>
             <p class="section-text">Порахуймо, скільки це коштує вашому бізнесу</p>
@@ -7803,7 +8192,7 @@
 
         <!-- Slide 15: Pains Check - Manufacturing -->
         <section class="slide" id="pains-check">
-            <span class="slide-number">14 / 43</span>
+            <span class="slide-number">16 / 45</span>
 
             <h2 class="section-title">Чи буває у вас <span class="highlight-red">таке?</span></h2>
             <p class="section-text">Відмітьте ситуації, які трапляються у вашому виробництві</p>
@@ -7962,7 +8351,7 @@
 
         <!-- Slide 16: Org Structure Wrong -->
         <section class="slide" id="tools">
-            <span class="slide-number">15 / 43</span>
+            <span class="slide-number">17 / 45</span>
 
             <div class="structure-header">
                 <div class="structure-icon">
@@ -8071,7 +8460,7 @@
 
         <!-- Slide 17: Manufacturing Functions Part 1 -->
         <section class="slide" id="functions">
-            <span class="slide-number">16 / 43</span>
+            <span class="slide-number">18 / 45</span>
 
             <div class="solution-badge">Рішення</div>
 
@@ -8312,7 +8701,7 @@
 
         <!-- Slide 18: Management Functions -->
         <section class="slide" id="functions-mgmt">
-            <span class="slide-number">17 / 43</span>
+            <span class="slide-number">19 / 45</span>
 
             <div class="functions-section">
                 <div class="functions-header management">
@@ -8467,7 +8856,7 @@
 
         <!-- Slide 19: Organism Metaphor -->
         <section class="slide" id="organism">
-            <span class="slide-number">18 / 43</span>
+            <span class="slide-number">20 / 45</span>
 
             <h2 class="section-title">Бізнес — це <span class="highlight">організм</span></h2>
             <p class="section-text">Кожна функція — як орган у тілі людини</p>
@@ -8551,7 +8940,7 @@
 
         <!-- Slide 20: Objection - Not About Hiring -->
         <section class="slide" id="objection">
-            <span class="slide-number">19 / 43</span>
+            <span class="slide-number">21 / 45</span>
 
             <div class="objection-header">
                 <div class="objection-icon">
@@ -8634,7 +9023,7 @@
 
         <!-- Slide 21: Result Formation Skill - Intro -->
         <section class="slide" id="next-tool">
-            <span class="slide-number">20 / 43</span>
+            <span class="slide-number">22 / 45</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #2</span>
@@ -8670,7 +9059,7 @@
 
         <!-- Slide 22: Metrics Part 1 - Operations -->
         <section class="slide" id="metrics-1">
-            <span class="slide-number">21 / 43</span>
+            <span class="slide-number">23 / 45</span>
 
             <h2 class="section-title">Правильні метрики: <span class="highlight">Операції</span></h2>
             <p class="section-text">Не "фальшиві цифри", які нічого не показують</p>
@@ -8788,7 +9177,7 @@
 
         <!-- Slide 23: Metrics Part 2 - Management -->
         <section class="slide" id="metrics-2">
-            <span class="slide-number">22 / 43</span>
+            <span class="slide-number">24 / 45</span>
 
             <h2 class="section-title">Правильні метрики: <span class="highlight">Управління</span></h2>
 
@@ -8901,7 +9290,7 @@
 
         <!-- Slide 24: Ideal Picture -->
         <section class="slide" id="ideal">
-            <span class="slide-number">23 / 43</span>
+            <span class="slide-number">25 / 45</span>
 
             <h2 class="section-title">Як виглядає <span class="highlight">результат</span></h2>
             <p class="section-text">Коли функції визначені + метрики правильні</p>
@@ -9014,7 +9403,7 @@
 
         <!-- Slide 25: Results -->
         <section class="slide" id="results">
-            <span class="slide-number">24 / 43</span>
+            <span class="slide-number">26 / 45</span>
 
             <h2 class="section-title">Результати <span class="highlight">впровадження</span></h2>
 
@@ -9095,7 +9484,7 @@
 
         <!-- Slide 26: Bottleneck Analysis -->
         <section class="slide" id="bottleneck">
-            <span class="slide-number">25 / 43</span>
+            <span class="slide-number">27 / 45</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #4</span>
@@ -9181,7 +9570,7 @@
 
         <!-- Slide 27: Planning System -->
         <section class="slide" id="planning">
-            <span class="slide-number">26 / 43</span>
+            <span class="slide-number">28 / 45</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #5</span>
@@ -9258,7 +9647,7 @@
 
         <!-- Slide 28: Task Technology -->
         <section class="slide" id="task-tech">
-            <span class="slide-number">27 / 43</span>
+            <span class="slide-number">29 / 45</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #6</span>
@@ -9324,7 +9713,7 @@
 
         <!-- Slide 29: Task Delegation -->
         <section class="slide" id="delegation">
-            <span class="slide-number">28 / 43</span>
+            <span class="slide-number">30 / 45</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #7</span>
@@ -9392,7 +9781,7 @@
 
         <!-- Slide: Coordination System -->
         <section class="slide" id="coordination">
-            <span class="slide-number">29 / 43</span>
+            <span class="slide-number">31 / 45</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #8</span>
@@ -9440,7 +9829,7 @@
 
         <!-- Slide: Financial Planning -->
         <section class="slide" id="finance">
-            <span class="slide-number">30 / 43</span>
+            <span class="slide-number">32 / 45</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">Інструмент #9</span>
@@ -9484,7 +9873,7 @@
 
         <!-- Slide: Marketing & Sales System -->
         <section class="slide" id="marketing">
-            <span class="slide-number">31 / 43</span>
+            <span class="slide-number">33 / 45</span>
 
             <div class="next-tool-intro">
                 <span class="tool-badge">7 ЕЛЕМЕНТІВ</span>
@@ -9723,7 +10112,7 @@
 
         <!-- Slide: How It Works - Simplicity -->
         <section class="slide" id="how-it-works">
-            <span class="slide-number">32 / 43</span>
+            <span class="slide-number">34 / 45</span>
 
             <h2 class="section-title">Як це <span class="highlight">працює?</span></h2>
             <p class="section-text">Все набагато простіше, ніж здається</p>
@@ -9816,7 +10205,7 @@
 
         <!-- Slide 30: Training Platform -->
         <section class="slide" id="platform">
-            <span class="slide-number">33 / 43</span>
+            <span class="slide-number">35 / 45</span>
 
             <h2 class="section-title">Модулі <span class="highlight">прокачки</span></h2>
             <p class="section-text">Знайшли вузьке місце — йдемо підкручувати конкретну зону</p>
@@ -9932,7 +10321,7 @@
 
         <!-- Slide 31: AI Assistants -->
         <section class="slide" id="ai-assistants">
-            <span class="slide-number">34 / 43</span>
+            <span class="slide-number">36 / 45</span>
 
             <h2 class="section-title">AI-асистенти: <span class="highlight">×10 ефективності</span></h2>
             <p class="section-text">Будь-який співробітник стає супер-менеджером</p>
@@ -10004,7 +10393,7 @@
 
         <!-- Slide 32: Objections Part 1 -->
         <section class="slide" id="objections">
-            <span class="slide-number">35 / 43</span>
+            <span class="slide-number">37 / 45</span>
 
             <h2 class="section-title">Типові <span class="highlight-red">заперечення</span></h2>
             <p class="section-text">І чому вони не працюють</p>
@@ -10093,7 +10482,7 @@
 
         <!-- Slide 33: Objections Part 2 -->
         <section class="slide" id="objections-2">
-            <span class="slide-number">36 / 43</span>
+            <span class="slide-number">38 / 45</span>
 
             <h2 class="section-title">Ще <span class="highlight-red">заперечення</span></h2>
 
@@ -10184,7 +10573,7 @@
 
         <!-- Slide 34: Objections Part 3 -->
         <section class="slide" id="objections-3">
-            <span class="slide-number">37 / 43</span>
+            <span class="slide-number">39 / 45</span>
 
             <h2 class="section-title">І ще <span class="highlight-red">заперечення</span></h2>
 
@@ -10273,7 +10662,7 @@
 
         <!-- Slide 35: Objections Part 4 -->
         <section class="slide" id="objections-4">
-            <span class="slide-number">38 / 43</span>
+            <span class="slide-number">40 / 45</span>
 
             <h2 class="section-title">Останні <span class="highlight-red">сумніви</span></h2>
 
@@ -10363,7 +10752,7 @@
 
         <!-- Slide 36: The Difference -->
         <section class="slide" id="difference">
-            <span class="slide-number">39 / 43</span>
+            <span class="slide-number">41 / 45</span>
 
             <h2 class="section-title">В чому <span class="highlight">різниця?</span></h2>
             <p class="section-text">Чому інші інструменти не працюють</p>
@@ -10509,7 +10898,7 @@
 
         <!-- Slide 36: The Secret -->
         <section class="slide" id="secret">
-            <span class="slide-number">40 / 43</span>
+            <span class="slide-number">42 / 45</span>
 
             <h2 class="section-title">Мій <span class="highlight">секрет</span></h2>
 
@@ -10591,7 +10980,7 @@
 
         <!-- Slide 37: The Real Problem -->
         <section class="slide" id="real-problem">
-            <span class="slide-number">41 / 43</span>
+            <span class="slide-number">43 / 45</span>
 
             <h2 class="section-title">Справжня <span class="highlight">проблема</span></h2>
 
@@ -10644,7 +11033,7 @@
 
         <!-- Slide 34: Final Result -->
         <section class="slide" id="final">
-            <span class="slide-number">42 / 43</span>
+            <span class="slide-number">44 / 45</span>
 
             <h2 class="section-title">Кінцевий <span class="highlight">результат</span></h2>
 
@@ -10683,7 +11072,7 @@
 
         <!-- Summary -->
         <section class="slide" id="summary">
-            <span class="slide-number">43 / 43</span>
+            <span class="slide-number">45 / 45</span>
 
             <h2 class="section-title">Що ми розглянули: <span class="highlight">7 + 9</span></h2>
 
